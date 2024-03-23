@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca2</title>
+</head>
+<body>
+<script>
+    var broj=prompt("Vnesi broj")
+    broj=parseInt(broj)
+    var cifri1=broj%1000;
+    cifri1=parseInt(cifri1)
+    var cifri2=(broj/1000)%1000;
+    cifri2=parseInt(cifri2)
+    var cifri3=broj/1000000
+    cifri3=parseInt(cifri3)
+
+    if(cifri3===75 || cifri3===76){
+        document.write(cifri3+'/'+cifri2+'-'+cifri1+' One')
+    }
+    else if(cifri3===70){
+        document.write(cifri3+'/'+cifri2+'-'+cifri1+' T-Mobile')
+    }
+    else if(cifri3===77){
+        document.write(cifri3+'/'+cifri2+'-'+cifri1+' Vip')
+    }
+</script>
+</body>
+</html>

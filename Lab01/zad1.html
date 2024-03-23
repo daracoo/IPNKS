@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca1</title>
+
+    <style>
+
+    </style>
+
+    <script>
+        var broj=prompt("Vnesi broj")
+        broj=parseInt(broj)
+        if(isNaN(broj) || broj<=100 || broj>=1000){
+            alert("Vneseniot broj ne moze da se proveri")
+        }
+        else{
+            var cifra1=broj%10;
+            cifra1=parseInt(cifra1)
+            var cifra3=(broj/100)%10
+            cifra3=parseInt(cifra3)
+            if(cifra1===cifra3){
+                document.write("Palindrom")
+            }
+            else{
+                document.write("Ne e palindrom")
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

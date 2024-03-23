@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca3</title>
+</head>
+<body>
+<script>
+    var sentence = prompt("Vnesete recenica")
+    sentence = sentence.toString()
+    sentence = sentence.split(" ")
+
+    var longest = 0;
+    var longestWord;
+
+    for (var i = 0; i < sentence.length; i++) {
+        if (sentence[i].length > longest) {
+            longest = sentence[i].length
+            longestWord = sentence[i]
+        }
+    }
+    document.write("Najdolgiot zbor vo vnesenata recenica e: " +longestWord)
+
+</script>
+</body>
+</html>
