@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+</head>
+<body>
+<script>
+    function cylinder(r, h){
+        this.r=r
+        this.h=h
+        this.perimeter=function(){
+            return  Math.PI*this.r*this.h;
+        }
+    }
+    var perimeter=new cylinder(3,5)
+
+    console.log("Perimeter= ", perimeter.perimeter().toFixed(2));
+</script>
+</body>
+</html>
